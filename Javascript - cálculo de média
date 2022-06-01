@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <h1>JavaScript - Cálculo de Média </h1>
+        <br>
+        <h1>
+            Média: 
+            <span id = "med">6</span>
+        </h1>
+        <h1>
+            situação: 
+            <span id = "sit" style="color: blue;">Aprovado</span>
+        </h1>
+        <script>
+            let situação='';
+            let color='';
+            let nota1 = parseFloat(prompt(digite a primeira nota:''));
+            let nota2 = parseFloat(prompt(''digite a segunda nota:''));
+            let media = (nota1+nota2)/2;
+            if (media>= 6) {
+                situação = Aprovado'';
+                color =  ''azul'';
+            }else {
+                situação =  ''Reprovado'';
+                color = ''vermelho'';
+}
+                
+                document.getElementById (''med'').innerHTML=media;
+                document.getElementById(''sit'').innerHTML=situação;
+                document.getElementById(''sit'').style.color=cor;
+        </script>
+    </body>
+</html>
